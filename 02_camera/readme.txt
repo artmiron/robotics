@@ -1,7 +1,7 @@
-﻿kamera RPi podłączona do GPIO 16
+Camera RPi connected to GPIO 16
 
 
-Wykorzystane elementy:
-- przelacznik - tact switch THT
+Elements:
+- tact switch THT
 - camera HD RPi Rev 2.1
-- do tego płytka stykowa oraz taśma z końcówką do płytki
+- additiona and optiona (płytka stykowa oraz taśma z adapterem do płytki)

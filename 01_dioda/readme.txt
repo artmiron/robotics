@@ -1,7 +1,8 @@
-dioda podłączona do GPIO 21
+﻿This is simple test with lightins Diode connected to RaspberryPi 3.
 
+Diode is connected do GPIO 21
 
-Wykorzystane elementy:
-- dioda (zielona ;) )
-- opornik 100 Ohm
-- do tego płytka stykowa oraz taśma z końcówką do płytki
+Elements used:
+- diode (green ;) )
+- resistor 100 Ohm
+- aditional and optional (Pyta stykowa 830, tasma z adapterem)
