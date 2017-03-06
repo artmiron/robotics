@@ -28,11 +28,15 @@ def convertToDutyCycle( param ):
 GPIO.setmode(GPIO.BCM)
 
 pinServo = 18
+pinDiode = 21
 
+#GPIO.setwarnings(False)
+GPIO.setup(pinDiode, GPIO.OUT)
 GPIO.setup(pinServo, GPIO.OUT)
 
 frequentzy_hertz = 50
 pwm = GPIO.PWM(pinServo, frequentzy_hertz)
+pwmDiode = GPIO.PWM(pinDiode, frequentzy_hertz)
 
 while True:
     inputValue = raw_input('Type in a number of degree to move servo: ')
@@ -45,6 +49,8 @@ while True:
 			dutyCycle = convertToDutyCycle( degrees )
 			print("Servo will set PWM to: %s" % (dutyCycle))
 			pwm.start(dutyCycle)
+			# duty cycle for Diode convertion 0-100 %
+			pwmDiode.start(degrees*10/18)
         else:
             print("Warning! The value needs to be between 0-180")
     else:

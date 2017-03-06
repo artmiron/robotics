@@ -4,7 +4,7 @@ import sys
 GPIO.setmode(GPIO.BCM)
 
 pinDiode = 21
-frequentzy_hertz = 50
+frequentzy_hertz = 5
 
 #GPIO.setwarnings(False)
 GPIO.setup(pinDiode, GPIO.OUT)
