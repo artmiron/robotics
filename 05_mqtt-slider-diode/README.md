@@ -5,10 +5,11 @@ Added jQuery slider which steers diode light.
 
 ## Running
 
-1. Start MQTT Broker
+1. Run python program
+* run diode_slider.py
+* optionally to watch communication logs
 ```
 > mosquitto_sub -h 192.168.0.108 -t "World" -v
 ```
-2. Run python program
-3. Open html page with Websocket and connect to Mosquitto
-4. Slide and enjoy changing diode light intensity
+2. Open html page with Websocket and connect to Mosquitto
+3. Slide and enjoy changing diode light intensity
